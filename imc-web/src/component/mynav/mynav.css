@@ -1,0 +1,16 @@
+.container-nav .nav{
+    background-color: maroon;
+}
+
+.container-nav .nav .nav-item{
+    line-height: 1.5rem; 
+    padding-left:5px;
+    padding-right:5px;
+    
+    
+}
+
+.container-nav .nav .nav-item a{
+    color:white;
+    font-size:25px;
+}
