@@ -1,16 +1,86 @@
-.container-nav .nav{
+/*************************************NAV-Defaults**********************************************************/
+
+.container-nav .navbar{
     background-color: maroon;
+    padding-left:0px;
+    padding-right:0px;
+    padding-bottom:1px; 
 }
 
-.container-nav .nav .nav-item{
-    line-height: 1.5rem; 
-    padding-left:5px;
-    padding-right:5px;
-    
-    
+
+
+container-nav{
+
+
 }
 
-.container-nav .nav .nav-item a{
+.container-nav .navbar .nav-item{
+    line-height: 2rem; 
+    padding-left:25px;
+    padding-right:20px;
+
+
+
+}
+
+.container-nav .navbar .nav-item a{
     color:white;
-    font-size:25px;
+    font-size:19px;
+
+
+}
+
+
+.container-nav .navbar-dark .navbar-toggler{
+
+    border-color:white; 
+
+
+}
+/*  Dropdown link (toggled) */
+.container-nav .navbar .navbar-nav .dropdown-menu{
+ background-color: maroon;
+
+}
+.container-nav .navbar .navbar-nav .show{
+ background-color: maroon;
+
+}
+
+
+/*!-------------------------------------------------------------Toggled Nav---------------------------------> */
+/* Nav Dropdown */
+.container-nav .navbar .show{ 
+    background-color: #fff7eb;
+
+}
+.container-nav .navbar .collapsing{ 
+    background-color: #fff7eb;
+
+}
+.container-nav .navbar .show .nav-item a{ 
+    color:maroon;
+}
+.container-nav .navbar .collapsing .nav-item a{ 
+    color: maroon;
+    
+
+}
+/*  Dropdown link (toggled) */
+.container-nav .navbar .show .navbar-nav .show{
+ background-color:  #fff7eb;
+ margin-bottom:1px;
+}
+.container-nav .navbar .show .navbar-nav .show .show{
+ 
+ padding-left:0px;
+ padding-right: 0px;
+ text-align:center; 
+ border: 0px;
+ border-top:1px solid maroon; 
+}
+.container-nav .navbar .navbar-toggler{
+    margin:10px; 
+    margin-top:5px;
+
 }

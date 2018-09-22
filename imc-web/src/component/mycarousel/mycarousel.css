@@ -1,0 +1,40 @@
+/****************************************Carousel Alignment****************************************************/
+.carousel-container .col-sm-1{
+    background-color: blanchedalmond; opacity: 0.4;
+    padding: 0px; 
+}
+.carousel-container .col-sm-12{
+ 
+    padding: 0px; 
+}
+
+.carousel-container .row{
+    width:100%;
+    margin:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************Carousel Inner***********************************************************/
+.carousel-inner img{
+   min-height: 200px;
+}
