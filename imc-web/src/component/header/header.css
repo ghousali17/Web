@@ -1,14 +1,9 @@
-.logo-container{
+.container-logo{
     margin-left: 0px; 
-    min-height: 50px;
+    min-height: 100px;
+    max-height:75px;
     padding:0px; 
     padding-top:10px;
     padding-bottom:5px; 
-
-}
-.logo-container .logo{
-    margin-left:0px; 
-    left:0;
-    display:block;
 
 }

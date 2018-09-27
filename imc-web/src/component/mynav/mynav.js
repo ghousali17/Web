@@ -40,8 +40,8 @@ class MyNav extends Component{
                                     Locations
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">North Karachi</a>
-                                     <a class="dropdown-item" href="#">Orangi Town</a>
+                                    <a class="dropdown-item" href="#nk">North Karachi</a>
+                                     <a class="dropdown-item" href="#ot">Orangi Town</a>
                                    
                                    
                                 </div>

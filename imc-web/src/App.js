@@ -5,7 +5,9 @@ import Header from './component/header/header.js';
 import MyNav from './component/mynav/mynav.js';
 import MyCarasoul from './component/mycarousel/mycarousel.js';
 import HomeBox from './component/homebox/homebox.js';
-
+import Services from './component/services/services.js';
+import Map from './component/maps/maps.js';
+import Location from './component/location/location.js'
 
 class App extends Component {
     render() {
@@ -13,10 +15,13 @@ class App extends Component {
 
 
             <div className="App">
-            <Header/>
-            <MyNav/>
-            <MyCarasoul/>
-            <HomeBox/>
+                <Header/>
+                <MyNav/>
+                <MyCarasoul/>
+                <HomeBox/>
+                <Services/>
+               
+                    <Location/>
             </div>
         );
     }

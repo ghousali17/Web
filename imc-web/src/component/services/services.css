@@ -1,0 +1,42 @@
+/*************************************Alignment******************************************************************/
+
+.container-services .servicesbox{
+    padding: 10px 10px;
+    text-align: left; 
+}
+
+.container-services .container-heading{
+    padding:30px 20px;
+    text-align: left;
+    color:maroon;
+}
+
+.container-services .row{
+    margin:0px;
+    width:100%;
+    padding-top:3px;
+    padding-bottom: 10px;
+}
+
+.container-services .row-gray{
+    background-color: gainsboro;
+}
+
+
+/*************************************TextStyling**********************************************************/
+
+.container-services .servicesbox .subheading{
+    color:maroon;
+    font-size: 19px; 
+    padding-bottom: 5px;;
+}
+
+.container-services .servicesbox .text{
+    
+    font-size: 15px; 
+}
+
+.container-services .servicesbox .row-mid{
+    
+   background-color: #fff7eb;
+}

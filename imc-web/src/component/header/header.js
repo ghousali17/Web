@@ -9,11 +9,11 @@ class Header extends Component{
 
     render(){
         return(
-            <div className="container-fluid">
+            <div className="container-fluid container-logo">
                 <div className="row">
                     <div className="col-sm-12">
-                        <div className="logo-container container-fluid">
-                            <img src={Logo} className="logo" alt="logo" />
+                        <div className="container-img">
+                            <img src={Logo} className="img-fluid float-left" alt="Responsive image" />
                         </div>
 
 
