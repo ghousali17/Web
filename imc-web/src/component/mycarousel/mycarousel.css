@@ -11,8 +11,8 @@
 .carousel-container .row{
     width:100%;
     margin:0px;
+    
 }
-
 
 
 
@@ -36,5 +36,5 @@
 
 /*************************************Carousel Inner***********************************************************/
 .carousel-inner img{
-   min-height: 200px;
+   min-height: 300px;
 }

@@ -7,8 +7,6 @@
 .container-homebox .outerbox{
     padding:10px; 
     background-color:maroon;
- 
-
     -moz-box-shadow:    -2px 2px 1px 1px black;
     -webkit-box-shadow: -2px 2px 1px 1px black;
     box-shadow:         -2px 2px 1px 1px black;

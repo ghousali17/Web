@@ -12,15 +12,13 @@ class Services extends Component{
     render(){
         return(
             <div className="container-services container-flex">
-                <div className="row container-heading">
-                    <div className="col-sm-12">
-                        <h1 className="display-6">
-                            <u>Our Facilities</u>    
 
-                        </h1>
 
-                    </div>
+                <div className="container-heading">
+                    Our Facilities  
                 </div>
+
+
                 <div className="servicesbox">          
                     <div className="row row-gray">
                         <div className="col-sm-6">

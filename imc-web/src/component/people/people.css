@@ -1,0 +1,71 @@
+
+.container-people{
+    padding:30px 0px;
+    background-color: #9370db17;
+    background-color: #F1F1F1;
+    background-color: rgba(250,250,250);
+
+    border-top:1px solid maroon;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+.container-people .card-people{
+    font-size:15px;
+    padding: 4%;
+    padding-bottom:50px;
+    margin-bottom: 25px;
+
+    border-radius: 5px;
+    
+    
+    
+}
+.container-people .heading-main{
+    font-size: 45px;
+    display: solid;
+    margin:auto;
+    color: maroon;
+    font-weight: 600;
+    padding-top:10px;
+    padding-bottom: 40px;
+}
+.container-people .card-people .heading-card{
+    font-size:21px;
+    color:maroon;
+    padding:0px;
+    margin:0px;
+    padding-top: 20px;
+    
+    
+}
+.container-people .card-people .subheading-card p{
+    font-size: 16px;
+    color:maroon;
+    margin-bottom: 8px;
+    
+}
+.container-people .card-people .text-card{
+    
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left:2%;
+    padding-right:2%;
+    
+    
+}
+.container-people .card-people .img-card{
+    border-radius:175px;
+    width:175px;
+    height:175px;
+   border: 1px  solid  gainsboro;
+}
+
+.container-people .card-people .img-card-container{
+    width:200px;
+
+    display:block;
+    margin:auto;
+    padding:10px;
+}

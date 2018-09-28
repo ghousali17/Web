@@ -22,6 +22,7 @@ app.listen(3004, function(){
 app.get('/',function(request,response){
 
     response.send(user); //Argument should be a JSON object
+    console.log('Request for doctors received');
 
 });
 

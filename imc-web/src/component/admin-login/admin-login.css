@@ -1,0 +1,10 @@
+.container-admin-login .modal-body{
+    text-align: left;
+}
+
+.container-admin-login .modal-footer .btn{
+    background-color:maroon;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+

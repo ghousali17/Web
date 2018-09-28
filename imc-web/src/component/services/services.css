@@ -1,22 +1,32 @@
 /*************************************Alignment******************************************************************/
-
-.container-services .servicesbox{
-    padding: 10px 10px;
-    text-align: left; 
+.container-services{
+    padding: 0px 10px;
 }
-
-.container-services .container-heading{
-    padding:30px 20px;
-    text-align: left;
-    color:maroon;
-}
-
 .container-services .row{
     margin:0px;
     width:100%;
     padding-top:3px;
     padding-bottom: 10px;
 }
+.container-services .servicesbox{
+    padding: 0px;
+    text-align: left; 
+    padding-bottom: 0px;
+}
+
+.container-services .container-heading{
+    font-size: 45px;
+    display: solid;
+    margin:auto;
+    color: maroon;
+    font-weight: 600;
+    padding-top:50px;
+    padding-bottom: 10px;
+        background-color: rgba(250,250,250);
+
+}
+
+
 
 .container-services .row-gray{
     background-color: gainsboro;
@@ -32,11 +42,11 @@
 }
 
 .container-services .servicesbox .text{
-    
+
     font-size: 15px; 
 }
 
 .container-services .servicesbox .row-mid{
-    
-   background-color: #fff7eb;
+
+    background-color: #fff7eb;
 }
