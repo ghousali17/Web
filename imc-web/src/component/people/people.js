@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Doc1 from './doctor-1.png';
-import Doc2 from './doctor-4.jpg';
+import Doc1 from './doctor-1.jpg';
+import Doc2 from './doctor-2.jpg';
 import Doc3 from './doctor-3.jpg';
-import Doc4 from './doctor -4.jpg';
+import Doc4 from './doctor-1.jpg';
 import './people.css'; 
 
 

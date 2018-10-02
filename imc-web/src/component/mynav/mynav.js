@@ -31,7 +31,7 @@ class MyNav extends Component{
                                 <a className="nav-link" href="#">Donate<span className="sr-only">(current)</span></a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Make Appointment<span className="sr-only">(current)</span></a>
+                                <a className="nav-link" href="#appointment">Make Appointment<span className="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
