@@ -21,14 +21,14 @@ class MyNav extends Component{
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Timing<span className="sr-only">(current)</span></a>
+                                <a className="nav-link" href="#location">Timing<span className="sr-only">(current)</span></a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#doctors">Doctors<span className="sr-only">(current)</span></a>
                             </li>
                            
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Donate<span className="sr-only">(current)</span></a>
+                                <a className="nav-link" href="#donate">Donate<span className="sr-only">(current)</span></a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#appointment">Make Appointment<span className="sr-only">(current)</span></a>

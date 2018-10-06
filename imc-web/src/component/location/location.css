@@ -1,16 +1,18 @@
 
 .container-location{
 
-    padding: 10px 10px;
+    padding: 0px 0px;
     text-align: left; 
 
 }
 
-
+.container-location .col-location-outer{
+    padding:0px;
+}
 
 .container-location .container-location-inner {
 
-    padding:30px 0px;
+    padding:0px;
 
     border-top: 1px solid maroon; 
 
@@ -18,46 +20,23 @@
 
 
 }
-.container-location .container-location-inner .col-sm-5{
-
-
-
-
-}
-
 
 .container-location .container-location-inner .subheading{
     color:maroon;
     font-size: 21px; 
     padding-bottom:20px;
-
+    
     margin: auto;
     display: solid;
 
 }
-.container-location .container-location-inner .text{
 
-
-
-
-}
-.container-location .container-location-inner  .col-location-outer{
-
-
-    padding-top:10px;
-    padding-bottom:10px;
-}
 .container-location .container-location-inner .col-location-inner {
-    -moz-box-shadow:     0px 0px 1px 1px black;
-    -webkit-box-shadow:  0px 0px 1px 1px black;
-    box-shadow:           0px 0px 1px 1px black;
+   
     background-color:gainsboro;
     color:black;
-    border-radius:2.5%;
-    padding:30px 30px; 
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 14px; 
+    padding:40px 4%; 
+    font-size:16px; 
     line-height: 1.5em;
     
 
@@ -79,4 +58,7 @@
 .container-location .container-location-inner b{
     color:maroon;
     text-decoration-color: maroon;
+}
+.col-location-inner .col-sm-6{
+    margin-bottom: 10px;
 }

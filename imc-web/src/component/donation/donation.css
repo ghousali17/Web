@@ -1,0 +1,172 @@
+.container-donation{
+    padding:0px 0px;
+    margin-left:10px;
+    margin-right:10px;
+
+
+}
+
+/**************************************Section one*******************************************************************************************************/
+.container-donation .img-1{
+    background: url('./img1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover; 
+    padding:0px; 
+    height:100vh;
+
+}
+.container-donation .pad-1{
+
+
+    background-color: rgba(255,255,255,0.8);
+    height:100vh;
+
+
+}
+
+
+.container-donation .txt-box-1{
+    margin-top:25vh; 
+    display: block;
+    margin-left:auto;
+    margin-right:auto; 
+    padding: 0% 12.5%;
+    text-align: center;
+
+}
+
+.container-donation .txt-box-1 .txt-top{
+
+    font-size:calc(25px + 0.9vw);
+    font-weight: 500;
+    color:maroon; 
+    line-height: 1.3em;
+    letter-spacing: -.02em;
+    margin-bottom:6px;
+}
+.container-donation .txt-box-1 .txt-bot{
+    font-size:calc(18px + 1.0vw);
+    font-weight: 400;
+    line-height: 1.3em;
+    letter-spacing: -.02em;
+    color: #45505f;
+    margin-bottom:6px;
+
+}
+
+
+.container-donation .dropdown .btn{
+    background-color:maroon;
+    font-size:calc(18px + 0.8vw);
+    padding:7.5px 9%;
+    margin-top:20px; 
+    border-radius: 5px;
+
+}
+.container-donation .dropdown a{
+    color:maroon;
+    text-align: center;
+}
+
+
+
+
+.container-donation .img-2{
+    background-image: url(https://www.adoptalovestory.com/wp-content/uploads/2016/09/dad-kid-playing-cars-1024x682.jpg);
+
+    background-repeat:no-repeat;
+    background-size:cover; 
+    padding:0px; 
+    height:100vh;
+
+}
+.container-donation .txt-box-2{
+    margin-top:25vh; 
+    padding: 0% 60px;
+    color: white;
+
+}
+
+.container-donation .txt-box-2 .txt-top{
+
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: calc(18px + 1.4vw);
+    line-height: 1em;
+    letter-spacing: -.02em;
+    margin-bottom:6px;
+    text-align:right; 
+}
+.container-donation .txt-box-2 .txt-bot{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: calc(18px + 1.4vw);
+    line-height: 1em;
+    letter-spacing: -.02em;
+    margin-bottom:6px;
+    text-align:left;
+     
+}
+
+.container-donation .img-3{
+    background: url('./img8.jpg');
+    background-repeat:no-repeat;
+    background-size:cover; 
+    padding:0px; 
+    height:100vh;
+
+}
+.container-donation .pad-3{
+
+  
+    background-color: rgba(100,0,0,0.7);
+    height:100vh;
+
+
+}
+.container-donation .txt-box-3{
+    margin-top:30vh; 
+    display: block;
+    margin-left:auto;
+    margin-right:auto; 
+    padding: 0% 5%;
+    text-align: center;
+
+}
+
+.container-donation .txt-box-3 .txt-top{
+
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(18px + 1.6vw);
+    color:yellow;
+    line-height: 1.1em;
+    letter-spacing: -.02em;
+    margin-bottom:6px;
+}
+.container-donation .txt-box-3 .txt-bot{
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: calc(18px + 1.0vw);
+    line-height: 1.1em;
+    letter-spacing: -.02em;
+    color:white;
+
+    margin-bottom:6px;
+
+}
+
+
+.container-donation .txt-box-3 .dropdown .btn{
+    background-color:#db765a;
+    font-size:calc(18px + 0.8vw);
+    padding:15x 9%;
+    margin-top:20px; 
+    border-radius: 5px;
+
+}
+.container-donation .txt-box-3 .dropdown a{
+    color:maroon;
+    text-align: center;
+}
+

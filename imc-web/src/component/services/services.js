@@ -29,11 +29,11 @@ class Services extends Component{
 
                             </div>
                             <div className="row">
-                                <div className="col-6 col-inner">
-                                    <p className="text">With the aid of latest MRI scanners, our skilled neurologists and uncologists ensure quick and accurate daignosis for our patients.</p>
+                                <div className="col-5 col-inner">
+                                    <p className="text">With the aid of latest MRI scanners, our skilled neurologists and uncologists ensure quick and accurate daignosis for our patients.Lets see how it goes.</p>
 
                                 </div>  
-                                <div className="col-6 col-inner">
+                                <div className="col-7 col-inner col-img">
                                     <img src={IMG1} class="img-fluid" alt="Responsive image"/>
 
                                 </div>
@@ -49,11 +49,11 @@ class Services extends Component{
 
                             </div>
                             <div className="row">
-                                <div className="col-6 col-inner">
+                                <div className="col-5 col-inner">
                                     <p className="text">With the aid of latest MRI scanners, our skilled neurologists and uncologists ensure quick and accurate daignosis for our patients.</p>
 
                                 </div>  
-                                <div className="col-6 col-inner">
+                                <div className="col-7 col-inner col-img">
                                     <img src={IMG4} class="img-fluid" alt="Responsive image"/>
 
                                 </div>
@@ -74,11 +74,11 @@ class Services extends Component{
 
                             </div>
                             <div className="row">
-                                <div className="col-6 col-inner">
+                                <div className="col-5 col-inner">
                                     <p className="text">With the aid of latest MRI scanners, our skilled neurologists and uncologists ensure quick and accurate daignosis for our patients.</p>
 
                                 </div>  
-                                <div className="col-6 col-inner">
+                                <div className="col-7 col-inner col-img">
                                     <img src={IMG2} class="img-fluid" alt="Responsive image"/>
 
                                 </div>
@@ -94,11 +94,11 @@ class Services extends Component{
 
                             </div>
                             <div className="row">
-                                <div className="col-6 col-inner">
+                                <div className="col-5 col-inner">
                                     <p className="text">With the aid of latest MRI scanners, our skilled neurologists and uncologists ensure quick and accurate daignosis for our patients.</p>
 
                                 </div>  
-                                <div className="col-6 col-inner">
+                                <div className="col-7 col-inner col-img">
                                     <img src={IMG5} class="img-fluid" alt="Responsive image"/>
 
                                 </div>
@@ -119,11 +119,11 @@ class Services extends Component{
 
                             </div>
                             <div className="row">
-                                <div className="col-6 col-inner">
+                                <div className="col-5 col-inner">
                                     <p className="text">With the aid of latest MRI scanners, our skilled neurologists and uncologists ensure quick and accurate daignosis for our patients.</p>
 
                                 </div>  
-                                <div className="col-6 col-inner">
+                                <div className="col-7 col-inner col-img">
                                     <img src={IMG3} class="img-fluid" alt="Responsive image"/>
 
                                 </div>
@@ -139,11 +139,11 @@ class Services extends Component{
 
                             </div>
                             <div className="row">
-                                <div className="col-6 col-inner">
+                                <div className="col-5 col-inner">
                                     <p className="text">With the aid of latest MRI scanners, our skilled neurologists and uncologists ensure quick and accurate daignosis for our patients.</p>
 
                                 </div>  
-                                <div className="col-6 col-inner">
+                                <div className="col-7 col-inner col-img">
                                     <img src={IMG6} class="img-fluid" alt="Responsive image"/>
 
                                 </div>

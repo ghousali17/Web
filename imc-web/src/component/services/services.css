@@ -12,17 +12,18 @@
     padding: 0px;
     text-align: left; 
     padding-bottom: 0px;
+    text-align: justify;
 }
 
 .container-services .container-heading{
-    font-size: 45px;
+    font-size:calc(25px + 2.0vw);
+    font-weight: 500;
     display: solid;
     margin:auto;
     color: maroon;
-    font-weight: 600;
     padding-top:50px;
     padding-bottom: 10px;
-        background-color: rgba(250,250,250);
+    background-color: rgba(250,250,250);
 
 }
 
@@ -37,16 +38,15 @@
 
 .container-services .servicesbox .subheading{
     color:maroon;
-    font-size: 19px; 
-    padding-bottom: 5px;;
+    font-size: 21px; 
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    margin-top:8px;
+    
 }
 
 .container-services .servicesbox .text{
 
-    font-size: 15px; 
+    font-size: 17px; 
 }
 
-.container-services .servicesbox .row-mid{
-
-    background-color: #fff7eb;
-}

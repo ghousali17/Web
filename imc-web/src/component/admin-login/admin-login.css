@@ -8,3 +8,29 @@
     padding-right: 15px;
 }
 
+.container-admin-login .modal-body .status-login{
+    text-align: left;
+    position:absolute;
+    left:0;
+    margin-left:20px;
+    font-size:16px;
+
+
+
+}
+.container-admin-login .modal-footer{
+
+}
+.container-admin-login .modal-body .status-hidden{
+    display:none;
+}
+.container-admin-login .modal-body .status-attempting{
+    display:block;
+    color:green;
+
+}
+.container-admin-login .modal-body .status-error{
+     display:block;
+    color:red;
+
+}

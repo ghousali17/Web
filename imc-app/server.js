@@ -1,5 +1,6 @@
 require('./models/Users.js');
 require('./models/Doctors.js');
+require('./models/Appointments.js');
 var cors = require('cors');
 const express = require('express'); //express library is needed to call essentail functions like get,post,listen.
 const bodyParser = require('body-parser'); //node module for our body parser function. 
@@ -8,7 +9,7 @@ const session = require('express-session'); //node module for session middleware
 
 const Users = mongoose.model('Users');
 const Doctors = mongoose.model('Doctors');
-
+const Appointments = mongoose.model('Appointments');
 var app = express();
 
 app.use(bodyParser.json()); //use function ensures the use middleware between the reuest recieved by our server and the data sent. 
@@ -48,13 +49,15 @@ app.get('/getdoctors',function(request,response){
     console.log('Request for doctors received');
 
     Doctors.find({}).then(function(doctors){
-        
+
         return response.send(doctors);
-        
+
     });
-    
-    
+
+
 });
+
+
 
 
 app.get('/logout', function(req, response) {
@@ -64,14 +67,24 @@ app.get('/logout', function(req, response) {
             if(err) {
                 response.status(400).send('Error');
             } else {
-                 
+
                 response.status(500).send('sucessfully logged out!');
             }
         });
     }
 });
 
+app.get('/getappointments',function(request,response){
+    console.log('Request for appointments received');
 
+    Appointments.find({}).then(function(appointments){
+
+        return response.send(appointments);
+
+    });
+
+
+});
 
 
 
@@ -101,24 +114,26 @@ app.post('/login',function(req,response){
     console.log('login called!');
     if(!user || user =="")
     {
-       return response.status(423).send("login request can't be empty");
+        return response.status(423).send("login request can't be empty");
     }else{
+        console.log('userId:' + user.userId);
+        console.log('password:' + user.password);
         if(user.userId && user.password){
 
             Users.findOne({userId: user.userId}).then(function(existingUser){
 
                 if(!existingUser){
-                    response.status(422).send('User ID not registered');
+                    response.status(422).send({"status":"unknown"});
                 }
                 else{
 
                     if(existingUser.validatePassword(user.password)){
                         req.session.userId = existingUser._id; //add to session middleware. 
                         console.log(existingUser);
-                        return response.status(500).send('Logged In successfully');
+                        return response.status(500).send({"status":"success"});
 
                     }else{
-                        return response.status(422).send('Incorrect password or User ID');
+                        return response.status(422).send({"status":"wrong"});
                     }
                 }
 
@@ -128,13 +143,50 @@ app.post('/login',function(req,response){
         }
         else{
 
-          return  response.status(422).send('You must provide your password and userid/email');
+            return  response.status(422).send({"status":"incomplete"});
         }
 
     }
 
 });
 
+
+app.post('/addappointment', function(request,response){
+    const formData = request.body;
+    console.log(formData);
+    if(!formData || formData =="")
+    {
+        return response.status(422).send({"status":"incomplete"});
+    }
+    else{
+
+        const finalAppointment= new Appointments(formData);
+        if(!finalAppointment)
+        {
+            return response.status(422).send({"status":"incomplete"});
+        }
+        else{
+            if((!formData.name || formData.name == "") ||
+               (!formData.doctorname|| formData.doctorname == "") ||
+               (!formData.contact || formData.contact == "") ||
+               (!formData.day || formData.day == "") ||
+               (!formData.branch || formData.branch == "") ||
+               (!formData.address || formData.address == ""))
+            {
+                return response.status(422).send({"status":"incomplete"});
+            }
+            else{
+                finalAppointment.save();
+                return response.status(500).send({"status":"success"})
+            }
+
+        }
+
+    }
+    console.log(formData);
+
+}
+        );
 
 app.post('/adduser', function(req,response) {
     const data = req.body;

@@ -6,46 +6,60 @@ class Appointment extends Component{
         super(props);
         this.doctorList = this.doctorList.bind(this);
         this.doctAvailibility = this.doctAvailibility.bind(this);
-
+        this.rowColor = this.rowColor.bind(this);
     }
     doctAvailibility = (doctor) =>{
         if(doctor.availibility == "yes")
-            return ( <div className="col-sm-2">Make appointment</div>);
+            return ( <div><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Make appointment</a></div>);
         else
-            return ( <div className="col-sm-2 appoint-unavail">Appointment Unavailable</div>);
-        
-        
+            return ( <div className="col-red"><a href="#">Appointment Unavailable</a></div>);
+
+
+    }
+    rowColor = (count) =>{
+        if(count%2==0)
+            return "row-entry row row-white";
+        else 
+            return "row-entry row row-gray";
+
     }
     doctorList = () =>{
         var count = 1;
         console.log('Got data');
         console.log(this.props.doctors);
-        
-        const list=this.props.doctors.map(doctor => 
-                                          <div className="row-entry row">
-                                              <div className="col-sm-1">{count++}</div>
-                                              <div className="col-sm-2">{doctor.name}</div>
-                                              <div className="col-sm-2">{doctor.type}</div>
-                                              <div className="col-sm-5">{doctor.days.map(day => <div className="days-doctor">{day}</div> )}</div>
-                                              {this.doctAvailibility(doctor)}
-                                          </div>                                   
-                                         );
-                                          return (list); 
+        var list = [];
+        for( var x = 0; x < this.props.doctors.length; x++)
+        {
+
+
+            list.push(<div className="col-sm-3">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. {this.props.doctors[x].name}</h5>
+                            <h6 class="card-subtitle text-muted">{this.props.doctors[x].type}</h6>
+                            <div class="row">{this.props.doctors[x].days.map(day => <div className="days-doctor col-sm-4">{day}</div> )}</div>
+                            <p class="card-text"> {this.doctAvailibility(this.props.doctors[x])}</p>
+                        </div>
+                    </div>
+                </div>
+            );
+
+
+        }
+
+        return (list); 
     }
     render(){
 
         return(
             <div className="container-appoint" id="appointment">
+                <div className="heading-main" id="doctors">Make Your Appointment</div>
                 <div className="box-appoint">
-                    <div className="row row-heading">
-                        <div className="col-sm-1">#</div>
-                        <div className="col-sm-2">Name</div>
-                        <div className="col-sm-2">Specialization</div>
-                        <div className="col-sm-5">Days</div>
-                        <div className="col-sm-2"></div>
+                    <div className="row row-appointment">
+                         {this.doctorList()}
                     </div>   
+                    
 
-                    {this.doctorList()}
 
 
                 </div>
@@ -54,6 +68,7 @@ class Appointment extends Component{
 
 
             </div>
+        
 
         );
     }

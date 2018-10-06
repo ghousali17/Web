@@ -1,0 +1,136 @@
+.container-aforms{
+    text-align:left; 
+    text-transform: capitalize;
+    font-size:19px;
+    color:maroon; 
+}
+.container-aforms .modal-body{
+    border-bottom: 1px solid gainsboro; 
+    padding-top:20px;
+    padding-bottom: 20px; 
+}
+.container-aforms .modal-header .modal-title{
+    font-size:26px;
+    color:maroon;
+    font-weight: 400px; 
+}
+.container-aforms .subheading-form{
+    text-align: left;
+    margin-bottom:2px; 
+    padding:3px;
+}
+
+
+/*******************************Appointment Details******************************************************/
+.container-aforms .row-details-visible {
+
+
+}
+.container-aforms .row-details-visible .doctor-name{
+    font-size: 36px;
+    font-weight: 500px; 
+    text-decoration-style:underline; 
+    color:maroon; 
+
+
+}
+.container-aforms .row-details-visible .doctor-type{
+    font-style:italic;
+}
+
+.container-aforms .row-details-visible .details{
+    padding-top:20px;
+    padding-bottom:20px; 
+    color:black; 
+    padding:20px 0px; 
+}
+.container-aforms .col-drop{
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom:10px; 
+
+}
+.container-aforms .col-drop-top{
+    padding:0px;
+    margin-top: 20px;
+    margin-bottom:10px; 
+
+
+}
+.container-aforms .col-drop select{
+    padding-top:5px; 
+    padding-bottom: 5px; 
+    border:1px solid black; 
+    font-size:19px; 
+
+}
+.container-aforms .col-drop-top select{
+    padding-top:5px; 
+    padding-bottom: 5px; 
+
+    font-size:19px; 
+    border:1px solid black; 
+}
+.container-aforms .row-details
+{
+    display:none;
+
+
+}
+
+.container-aforms  .status-login{
+    text-align: left;
+    font-size:16px;
+
+
+
+}
+
+
+/**********************Erro Box*****************************************/
+.container-aforms .col-sm-8{
+    padding-left:0px;
+    padding-right:0px; 
+}
+.container-aforms  .status-login{
+    text-align: left;
+    font-size:16px;
+
+
+
+}
+.container-aforms  .status-hidden{
+    display:none;
+}
+.container-aforms  .status-attempting{
+    display:block;
+    color:green;
+
+}
+.container-aforms  .status-error{
+    display:block;
+    color:red;
+
+}
+.container-aforms .appointment-btn-submit{
+    background-color:maroon;
+    padding:10px 15px;
+    padding-bottom: 10px; 
+}
+
+/*************************Success Box***************************************************/
+.container-aforms .form-status-hidden{
+
+
+    display:none; 
+}
+.container-aforms .form-response-hidden{
+    display:none; 
+}
+.container-aforms .form-response{
+    text-align:center;
+    color:green;
+    font-size:16px;
+
+
+} 

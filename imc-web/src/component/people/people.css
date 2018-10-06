@@ -12,7 +12,7 @@
 }
 
 .container-people .card-people{
-    font-size:15px;
+    font-size:17px;
     padding: 4%;
     padding-bottom:50px;
     margin-bottom: 25px;
@@ -23,16 +23,17 @@
     
 }
 .container-people .heading-main{
-    font-size: 45px;
+     font-size:calc(25px + 2.0vw);
+    font-weight: 500;
     display: solid;
     margin:auto;
     color: maroon;
-    font-weight: 600;
+   
     padding-top:10px;
     padding-bottom: 40px;
 }
 .container-people .card-people .heading-card{
-    font-size:21px;
+    font-size:23px;
     color:maroon;
     padding:0px;
     margin:0px;
@@ -41,7 +42,7 @@
     
 }
 .container-people .card-people .subheading-card p{
-    font-size: 16px;
+    font-size: 18px;
     color:maroon;
     margin-bottom: 8px;
     

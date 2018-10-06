@@ -18,17 +18,17 @@ class Location extends Component{
                                 <div className="col-lg-12 col-location-inner">
                                     <div className="row">
                                         <div className="col-sm-12"></div>
-                                        <p class="subheading" id="ot"><u><b>Orangi Centre</b></u></p>
+                                        <p class="subheading" id="nk"><u><b>North Karachi</b></u></p>
                                     </div> 
                                     <div className="row">
                                         <div className="col-sm-6">
                                             <div className="row">
-                                                <div className="col-5">
+                                                <div className="col-6">
                                                     <p class="text"><u><b>Address:<br/></b></u> A-25,6D-2,<br/>North Karachi,<br/>Karachi<br/>Pakistan.<br/>
                                                         <u><b>Contact:<br/></b></u> +92-308-3137504 <br/>
                                                     </p> 
                                                 </div>
-                                                <div className="col-7">
+                                                <div className="col-6">
                                                     <p class="text">
                                                         <u><b>Emergency:<br/></b></u>
                                                          24 Hours <br/>
@@ -57,12 +57,12 @@ class Location extends Component{
                                     <div className="row">
                                         <div className="col-sm-6">
                                             <div className="row">
-                                                <div className="col-5">
+                                                <div className="col-6">
                                                     <p class="text"><u><b>Address:<br/></b></u> A-25,6D-2,<br/>North Karachi,<br/>Karachi<br/>Pakistan.<br/>
                                                         <u><b>Contact:<br/></b></u> +92-308-3137504 <br/>
                                                     </p> 
                                                 </div>
-                                                <div className="col-7">
+                                                <div className="col-6">
                                                     <p class="text">
                                                         <u><b>Emergency:</b></u><br/> 24 Hours <br/>
                                                         <b>Visitation Hours:<br/></b> 09:00-14:00 <br/> 17:00-22:00 </p> 

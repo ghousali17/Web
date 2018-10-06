@@ -1,24 +1,50 @@
 import React, { Component } from 'react';
 import './admin-login.css'; 
+import HTTPService from '../../services/http-service.js';
 
-
-
+const http = new HTTPService();
 class AdminLogin extends Component{
-   constructor(props)
+    constructor(props)
     {
         super(props);
         this.userSubmit = this.userSubmit.bind(this);
+        this.adminLogin = this.props.adminLogin;
     }
-    userSubmit = () => {
-       var userID = document.getElementById('exampleInputEmail1');
-       var passWord = document.getElementById('exampleInputPassword1');
-       var user = {
-           "userName": userID.value.toString(), 
-           "password":passWord.value.toString()
-       };
-    console.log(user);
-        
-        
+
+    userSubmit = (event) => {
+        event.preventDefault();
+        var userId = document.getElementById('exampleInputEmail1');
+        var passWord = document.getElementById('exampleInputPassword1');
+        var statusLogin = document.getElementById('status-login');
+        //statusLogin.className -="hidden";
+        statusLogin.className ="status-login status-attempting";
+              
+
+        http.userLogin(userId.value.toString(), passWord.value.toString()).then((response) =>{
+            var statusLogin = document.getElementById('status-login');
+            if(response.status == "unknown")
+            {              statusLogin.className ="status-login status-error";
+             statusLogin.innerHTML = "User ID doesn't exist!";
+            }
+            else if(response.status == "wrong")
+            {  
+                statusLogin.className ="status-login status-error";
+                statusLogin.innerHTML = "Incorrect User ID or password!";
+
+            }
+            else if(response.status == "incomplete")
+            {
+                statusLogin.className ="status-login status-error";
+                statusLogin.innerHTML = "Please enter your User ID and password!";
+            }
+            else if(response.status == "success"){
+                statusLogin.innerHTML = "Success!";
+            }
+
+        });
+
+
+
     }
 
     render(){
@@ -37,18 +63,21 @@ class AdminLogin extends Component{
                                 <form >
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">User ID</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter User ID"/>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Password</label>
                                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
                                     </div>
-                                    <div class="form-group form-check">
-                                        <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary" onClick={  this.userSubmit} >Login</button>
-                                        </div>
 
+
+                                    <div class="modal-footer">
+                                        <div class="status-login status-hidden" id="status-login">
+                                            verifying your credentials...</div>
+                                        <button  type="submit" class="btn btn-primary" onClick={this.userSubmit}>Login</button>
                                     </div>
+
+
 
                                 </form>
                             </div>

@@ -6,41 +6,62 @@
     background-color: rgba(250,250,250);
 
 }
-
-.container-appoint .box-appoint{
-    padding: 15px 25px;
-}
-.container-appoint .box-appoint .row-heading{
-    background-color: maroon; 
-    font-size:20px;
-    color:white;
-    padding:9px;
-    font-weight: 600;
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
-    text-align: center;
-}
-
-
-.container-appoint .box-appoint .row-entry{
-    background-color: rgba(250,250,250);
-      background-color: #fff7eb;
-    border: 1px solid gainsboro;
-    padding:7px;
-    font-size: 15px;
+.container-appoint .heading-main{
+     font-size:calc(25px + 2.0vw);
     font-weight: 500;
-    color:rgb(60,60,60);
-    text-transform: capitalize; 
-
-
+    display: solid;
+    margin:auto;
+    color: maroon;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+.container-appoint .box-appoint{
+   
 }
 
-.container-appoint .box-appoint .row-entry .days-doctor{
 
-    display: inline-block !important; 
-    padding:0px 3px; 
+
+
+.container-appoint  .col-sm-3{
+    padding: 0.6%;
 }
 
-.container-appoint .box-appoint .row-entry .appoint-unavail{
+.container-appoint  .col-sm-3 .card{
+    padding-top:15%;
+    padding-bottom: 30%;
+    margin-bottom: 5%;
+    border-radius: 3%;
+}
+.container-appoint  .col-sm-3 .card .col-sm-4{
+      padding: 2px 2px;
+}
+.container-appoint  .col-sm-3 .card .card-title{
+    font-size:calc(23px + 0.6vw);
+    font-weight: 400;
+    color:maroon;
+    
+}
+.container-appoint  .col-sm-3 .card .card-subtitle{
+    font-size:calc(19px + 0.1vw);
+    margin-bottom: 5%;
+  
+}
+.container-appoint  .col-sm-3 .card{
+    text-transform: capitalize;
+    font-size: 18px;
+} 
+.container-appoint  .col-sm-3 .card .col-red a{
     color:red;
 }
+
+.container-appoint  .col-sm-3 .card .card-text{
+    margin-top:10px;
+}
+.container-appoint .box-appoint  .days-doctor{
+  padding: 0px;
+    font-weight: 300;
+    padding-left:1px;
+    padding-right: 1px;
+}
+
+
