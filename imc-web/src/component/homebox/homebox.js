@@ -9,13 +9,13 @@ class HomeBox extends Component{
         <div className="container-homebox container-flex">
         <div className="row">
             
-        <div className="col-sm-5">
+        <div className="col-md-7">
         <div className="outerbox">
         <div className="middlebox">
         <div className="innerbox">
         <h1 class="display-5" id="home">About Us</h1>
-        <p class="text">
-          <b>Iqra Medical Centre</b> is a charitable hospital started by Dr.Nargis Fatima. Our branches in Orangi Town and North Karachi have now been serving the local population for more than 20 years. Both of our branches are equipped with state-of-the-art medical equipments. Our faculty ranges from accomplished doctors to highly trained junior medical staff members. We aim to set a precedence for quality medical care in Karachi, irrespective of the financial background of our patients.
+        <p class="text" align="justify">
+          <b>Iqra Medical Centre</b> is a charitable hospital started by Dr.Nargis Fatima. Our branches in Orangi Town and North Karachi have now been serving the local population for more than 20 years. Both of our branches are equipped with state-of-the-art medical equipme-nts. Our faculty ranges from accomplished doctors to highly trained junior medical staff members. It is our aim to set a precedence for quality medical care in Karachi, irrespective of the financial back-ground of our patients.
  
         </p>
         </div>    
@@ -25,7 +25,7 @@ class HomeBox extends Component{
             
             
         </div>
-        <div className="col-sm-6 col-margin"></div>
+        <div className="col-md-5 col-margin"></div>
                 
         </div>    
             

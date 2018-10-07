@@ -60,22 +60,17 @@ class Donation extends Component{
                                 <div className="row txt-box-1">
                                     <div className="col-sm-12 txt-1">
                                         <p className="txt-top">
-                                            We envision a world where familiy no lives lives with the fear of losing their loved ones for lack of affordable health care.
+                                            We envision a world where familiy no lives with the fear of losing their loved ones for lack of affordable health care.
 
                                         </p>
                                         <p className="txt-bot">
-                                            
-                                           There is no exercise better for the heart than reaching down and lifting people up.
-                                        </p>
-                                        <div class="dropdown">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Let's Donate
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">IBAN: 123-456789</a>
-                                                <a class="dropdown-item" href="#">PBAN: 124-67890</a>
 
-                                            </div>
+                                            There is no exercise better for the heart than reaching down and lifting people up.
+                                        </p>
+                                        <div class="modal-1">
+                                            <button type="button" class="btn btn-primary button-modal" data-toggle="modal" data-target="#exampleModal">
+                                                Let's donate!
+                                            </button>
                                         </div>
                                     </div> 
                                 </div>    
@@ -83,7 +78,26 @@ class Donation extends Component{
                         </div>
                     </div>    
                 </div>
-
+           
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Not a real website!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                While we appreciate your altruism, let us remind you that this is a demo website and is not assciated with any NGO.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>);
     }

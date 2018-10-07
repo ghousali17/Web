@@ -20,10 +20,15 @@
     padding:3px;
 }
 
+.container-aforms .dayStateClass{
+    text-transform: capitalize;
+}
+
 
 /*******************************Appointment Details******************************************************/
-.container-aforms .row-details-visible {
-
+.container-aforms .row-details {
+  
+    display:none; 
 
 }
 .container-aforms .row-details-visible .doctor-name{

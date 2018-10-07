@@ -157,16 +157,22 @@
 }
 
 
-.container-donation .txt-box-3 .dropdown .btn{
-    background-color:#db765a;
-    font-size:calc(18px + 0.8vw);
-    padding:15x 9%;
-    margin-top:20px; 
+.container-donation .button-modal{
+    background-color:maroon;
+    font-size:calc(18px + 0.5vw);
+    padding:18x 11%;
+    margin-top:27px; 
     border-radius: 5px;
 
 }
-.container-donation .txt-box-3 .dropdown a{
+.container-donation .modal-title {
     color:maroon;
-    text-align: center;
 }
-
+.container-donation .btn {
+    background-color:maroon;
+}
+.container-donation .modal-body{
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center; 
+}

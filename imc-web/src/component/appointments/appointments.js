@@ -10,7 +10,7 @@ class Appointment extends Component{
     }
     doctAvailibility = (doctor) =>{
         if(doctor.availibility == "yes")
-            return ( <div><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Make appointment</a></div>);
+            return ( <div><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Make An Appointment</a></div>);
         else
             return ( <div className="col-red"><a href="#">Appointment Unavailable</a></div>);
 
@@ -37,7 +37,7 @@ class Appointment extends Component{
                         <div class="card-body">
                             <h5 class="card-title">Dr. {this.props.doctors[x].name}</h5>
                             <h6 class="card-subtitle text-muted">{this.props.doctors[x].type}</h6>
-                            <div class="row">{this.props.doctors[x].days.map(day => <div className="days-doctor col-sm-4">{day}</div> )}</div>
+                            <div class="row">{this.props.doctors[x].days.map(day => <div className="days-doctor col-lg-4">{day}</div> )}</div>
                             <p class="card-text"> {this.doctAvailibility(this.props.doctors[x])}</p>
                         </div>
                     </div>

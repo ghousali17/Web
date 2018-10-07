@@ -8,13 +8,11 @@ class Footer extends Component{
             <div className="container-footer">
                 <div className="row">
 
-                    <div className="col-sm-2"> <a href="#">Contact Us</a></div>
-                    <div className="col-sm-2"> <a href="#">Send your comments</a></div>
-                    <div className="col-sm-2"> <a href="#">Terms of Services</a> </div>
-                    <div className="col-sm-2"> <a href="#">Privacy Policy </a></div>
-
-                    <div className="col-sm-2"> <a href="#">Developers</a> </div>
-                    <div className="col-sm-2"> <a href="#" data-toggle="modal" data-target="#exampleModalLong">I am an admin</a></div>
+                    <div className="col-md-2"> <a href="#">Contact Us</a></div>
+                    <div className="col-md-3"> <a href="#">Your comments</a></div>
+                    <div className="col-md-3"> <a href="#">Terms of Services</a> </div>
+                    <div className="col-md-1"> <a href="#">Privacy</a></div>
+                    <div className="col-md-3"> <a href="#" data-toggle="modal" data-target="#exampleModalLong">I am an admin</a></div>
                     
 
                 </div>     

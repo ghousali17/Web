@@ -16,22 +16,30 @@ class AppointmentForm extends Component{
         var count = 0;
         console.log(this.props.doctors);
         var list =[];
+        list.push(<option value="Choose A Specialist" selected>Choose A Specialist</option>);
         for(var x = 0; x < this.props.doctors.length; x++)
         {  
             if(this.props.doctors[x].availibility != "no")
-                {
-                    list.push(<option value={this.props.doctors[x].name}>{this.props.doctors[x].name}</option>);
-                }
-            
-        }
-        
+            {   
+                list.push(<option value={this.props.doctors[x].name}>{this.props.doctors[x].name}</option>);
+            }
 
-                                          return (list); 
+        }
+
+
+        return (list); 
     }
     doctorDetail = () =>{
         var doctorState = document.getElementById('doctorState');
-        var name_param = doctorState.options[doctorState.selectedIndex].value;   
+        var name_param = doctorState.options[doctorState.selectedIndex].value;  
+        var displayDetails = document.getElementById('doctor-details');
+        var displayDays = document.getElementById('doctor-details-days');
 
+        if(name_param== "Choose A Specialist")
+        {   displayDetails.className = "row row-details";
+         displayDays.className ="row row-details";
+         return; 
+        }
 
 
         var count = -1;
@@ -66,14 +74,17 @@ class AppointmentForm extends Component{
     }
 
     submitAppointment = () =>{
+        var doctorState = document.getElementById('doctorState');
+        var doctorSelectionState = doctorState.options[doctorState.selectedIndex].value;  
         var doctorName = document.getElementById('doctor-name').innerText;
-        if(doctorName == "" || !doctorName)
-        {   var status = document.getElementById('status-appointment');
-         status.className ="status-login status-error";
-         status.innerText = "Please select a specialist!";
+        if(doctorName == "" || !doctorName || doctorSelectionState == "Choose A Specialist" )
+        {
+            var status = document.getElementById('status-appointment');
+            status.className ="status-login status-error";
+            status.innerText = "Please select a specialist!";
 
 
-         return; 
+            return; 
         }
         var address1 = document.getElementById('address1');
         var address2 = document.getElementById('address2');
@@ -150,6 +161,7 @@ class AppointmentForm extends Component{
 
                                         <select id="doctorState" className="doctorState form-control" onChange={this.doctorDetail}>
                                             {this.doctorList()}
+
                                         </select>
 
                                     </div>
@@ -158,7 +170,7 @@ class AppointmentForm extends Component{
                                 <div className="row row-details" id="doctor-details">
                                     <div className="col-sm-8 col-drop form-group">
                                         <p class="subheading-form">Days Available</p>
-                                        <select id="dayState" class="form-control">
+                                        <select id="dayState" class="form-control dayStateClass">
 
                                         </select>
                                     </div>
